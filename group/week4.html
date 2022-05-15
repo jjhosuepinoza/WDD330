@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Week 4</title>
+  <link rel="stylesheet" href="week4.css" >
+</head>
+<body>
+  <h1>
+    Week 04
+  </h1>
+
+  <h2>
+    Event Listeners
+  </h2>
+  <p>
+    They are like setting a notification to alert you when something happens. Instead of the program having to constantly check to see if an event has occurred, the event listener will let it know when the event happens, and the program can then respond appropriately. This allows the program to continue with other tasks while it waits for the event to happen.
+ <br>
+ For example, say in your program you want something to happen when a user clicks on the page. The code to check if a user has clicked might look like the example below (JavaScript doesn’t actually work like this, so this code would fail to work, although it is the way some programming languages work):
+  <br>
+  if (click) {<br>
+    doSomething();<br>
+    } else {<br>
+    // carry on with rest of the program
+}
+<br>
+The following code can be used to attach an event listener to the document that fires when the user clicks anywhere on the page:
+<br>
+
+</p>
+<section>
+
+  <h2>
+    Stopping default behavior
+  </h2>
+  <p>Make sure you think carefully before using preventDefault() to change default behavior. Users will expect certain behaviors, and preventing them may cause confusion.
+
+    Some events do not allow the default behavior to be prevented. This can vary from browser to browser, but each event object has a property called cancellable that returns false if it cannot be prevented.
+    
+    You can also see if the default behavior has been prevented by checking the defaultPrevented property.</p>
+</section>
+<h2>Accessing Form Elements</h2>
+<p>The legacy DOM had a useful property called document.forms that returns an HTML collection of all the forms in the document in the order they appear in the markup. Even though there is only one form in our example, a collection will still be returned, so we have to use index notation to return the first (and only) form object, like so:
+
+  Copy
+  const form = document.forms[0];
+  This is the equivalent of using the following method that we learned in chapter 6:
+  
+  Copy
+  const form = document.getElementsByTagname('form')[0];
+  Instead of using a numerical index, we can use the name attribute to identify a form:
+  
+  Copy
+  const form = document.forms.search;
+  Be careful referencing elements in this way, however. If the form had the same name as any properties or methods of the document.forms object, such as 'submit', for example, that property or method would be referenced instead of the form element. This is unlikely to happen, as the document.form object doesn't have many properties or methods, but it is something to be aware of. To avoid this, square bracket notation can be used (this is also required if the form's name attribute contains any invalid characters, such as spaces or dashes):</p>
+</body>
+</html>
