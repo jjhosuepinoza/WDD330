@@ -1,0 +1,15 @@
+body{
+    text-align: center;
+    background-color:rgb(110, 175, 224);
+    }
+    h1{
+    color: rgb(54, 42, 165);
+    }
+    p{
+    text-align: left;
+    font-size: 1.5rem;
+    }
+    li{
+        text-align: left;
+        font-size: 1.5rem;
+    }

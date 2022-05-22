@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Week 5</title>
+  <link rel="stylesheet" href="week5.css" >
+</head>
+<body>
+  <h1>
+    Testing and Debugging
+  </h1>
+ <p>Errors and bugs are a fact of life in programming ― they will always be there. A ninja programmer will try to do everything to minimize errors occurring, and find ways to identify and deal with them quickly.</p>
+ <br>
+   <p>In this chapter, we’ll cover the following topics:</p> 
+   <li>Errors, exceptions, and warnings</li>
+
+    <li>The importance of testing and debugging</li>
+    
+    <li>Strict mode </li>
+    
+    <li>Debugging in the browser</li>
+    
+    <li>Error objects</li>
+    
+    <li>Throwing exceptions</li>
+    
+    <li>Exception handling</li>
+    
+    <li>Testing frameworks</li>
+    
+    
+  <h2>
+    Error Objects
+  </h2>
+  
+  <li>EvalError is not used in the current ECMAScript specification and only retained for backwards compatibility. It was used to identify errors when using the global eval() function.</li>
+
+  <li>RangeError is thrown when a number is outside an allowable range of values.</li>
+  
+  <li>ReferenceError is thrown when a reference is made to an item that doesn’t exist. For example, calling a function that hasn't been defined.</li>
+  
+  <li>SyntaxError is thrown when there’s an error in the code’s syntax.</li>
+  
+  <li>TypeError is thrown when there’s an error in the type of value used; for example, a string is used when a number is expected.</li>
+  
+  <li>URIError is thrown when there’s a problem encoding or decoding the URI.</li>
+  
+  <li>InternalError is a non-standard error that is thrown when an error occurs in the JavaScript engine. A common cause of this too much recursion.</li>
+<section>
+
+  <h2>
+    Chapter Summary
+  </h2>
+<li>Bugs are unavoidable in code, and it’s best to find them early rather than later.</li>
+
+<li>JavaScript can be put into strict mode using the string "use strict". This can be used in a whole file or just a single function.</li>
+
+<li>Linting tools can be used to ensure your code follows good practice and conventions.</li>
+
+<li>Feature detection can check whether a method is supported before calling it, helping to avoid an exception being thrown.</li>
+
+<li>The console and browser’s built-in debugging tool can be used to interactively find and fix bugs in code.</li>
+
+<li>Exceptions can be thrown using the throw statement.</li>
+<li>An error object is created when an exception occurs.</li>
+
+<li>Any code placed inside a try block will pass any error objects to a catch block when an exception occurs. Any code inside a finally block will run if an exception does or does not occur.</li>
+
+<li>Test-driven development is the practice of writing tests that fail, then writing the code that passes the test, then refactoring the code every time a new feature is implemented.</li>
+
+<li>The Jest framework can be used to test your code.</li>
+</section>
+<h2></h2>
+
+</body>
+</html>
