@@ -1,0 +1,7 @@
+.boxer {
+    background-image: url("https://www.thehtml5herald.com/images/dukes.png");
+    background-position: bottom left;
+    background-repeat: no-repeat;
+    -webkit-transition: -webkit-transform  2s linear 250ms;
+    transition: transform  2s linear 250ms;
+    min-height: 140px; }

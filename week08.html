@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <meta charset="utf-8">
+
+    <title>The HTML5 Herald</title>
+    <meta name="description" content="The HTML5 Herald">
+    <meta name="author" content="SitePoint">
+
+    <link rel="stylesheet" href="css/styles.css">
+
+    <!--[if lt IE 9]>
+        <script src="js/html5shim.js"></script>
+    <![endif]-->
+
+    </head>
+    <header>
+        <h1>HTML5 Herald
+            <span class="tagline">Produced With That Good Ol’ Timey HTML5 & CSS3</span>
+        </h1>
+        <nav>
+        
+        </nav>
+    
+    </header>
+    <body>
+        <main role="main">
+            <div class="primary">
+                <article>
+
+                    <h1>Accessible Web Apps</h1>
+
+                    <p>Lorem ipsum dolor … </p>
+                
+                    <p>As you can see in <a href="#fig1">Figure 1</a>,
+                
+                    <figure id="fig1">
+                    <figcaption>Screen Reader Support for WAI-ARIA</figcaption>
+                    <img src="images/figure1.jpg" alt="JAWS: Landmarks 1/1, Forms 4/5 … ">
+                    </figure>
+                
+                    <p>Lorem ipsum dolor … </p>
+                </article>
+            </div>
+        
+            <div class="secondary">
+                <article>
+                    <h1>Your Task is in Progress</h1>
+                    <p>Status: <progress max="100" value="0"><span>0</span>% </progress>
+                    </p>
+
+                </article>
+            </div>
+        
+            <div class="tertiary">
+                <aside>
+                <article>
+                    <p>Total current disk usage: <meter value="130" min="0" max="320" 
+                        ↵low="10" high="300" title="gigabytes">63 GB</meter></p>
+                        <p>We’ll be getting together for our next developer conference on 
+                            <time datetime="2015-10-12">12 October of this year</time>.</p>
+                            <p>Harry’s Grill is the best <em>burger</em> joint in town.</p>
+<p>Harry’s Grill <em>is</em> the best burger joint in town.</p>
+<small>© SitePoint Pty. Ltd.</small>
+<p>In the words of <cite>Charles Bukowski</cite> -  
+    <q>An intellectual says a simple thing in a hard way. An artist says 
+    a hard thing in a simple way.</q></p>
+                </article>
+                </aside>
+        
+                <article>
+                    <dl>
+                        <dt>Selector:</dt>
+                        <dd>The element(s) targeted.</dd>
+                        <dt>Property:</dd>
+                        <dd>The feature used to add styling to the targeted element, 
+                    defined before a colon.</dd>
+                        <dt>Value:</dd>
+                        <dd>The value given to the specified property, declared after the 
+                    colon.</dd>
+                    </dl>
+                    <details>
+                        <summary>Some Magazines of Note</summary>
+                        <ul>
+                        <li><cite>Bird Watcher's Digest</cite></li>
+                        <li><cite>Rower's Weekly</cite></li>
+                        <li><cite>Fishing Monthly</cite></li>
+                        </ul>
+                    </details>
+
+                   
+                </article>
+                <!-- scoped list -->
+                <h1>Page Title</h1>
+                <article>
+                    <style scoped>
+                    h1 {
+                        color: rgb(13, 13, 13);
+                    }
+                    </style>
+                    <h1>Article Title</h1>
+                    <p>Article content.</p>
+                </article>
+                <!-- forms -->
+                <form id="register" method="post">
+                    <header>
+                    <h1>Sign Me Up!</h1>
+                    <p>I would like to receive your fine publication.</p>
+                    </header>
+                
+                    <ul>
+                    <li>
+                        <label for="register-name">My name is:</label>
+                        <input type="text" id="register-name" name="name" required aria-required="true">
+                    </li>
+                    <li>
+                        <label for="address">My email address is:</label>
+                        <input type="text" id="address" name="address" required aria-required="true">
+                    </li>
+                    <li>
+                        <label for="url">My website is located at:</label>
+                        <input type="text" id="url" name="url" required aria-required="true">
+                    </li>
+                    <li> 
+                        <label for="password">I would like my password to be:</label><p>(at least 6 characters, no spaces)</p>
+                        <input type="password" id="password" name="password" required aria-required="true">
+                    </li>
+                    <li>
+                        <label for="rating">On a scale of 1 to 10, my knowledge of HTML5 is:</label>
+                        <input type="text" name="rating" id="rating" required aria-required="true">
+                    </li>
+                    <li>
+                        <label for="startdate">Please start my subscription on:
+                </label>
+                        <input type="text" id="startdate" name="startdate" required aria-required="true">
+                    </li>
+                    <li>
+                        <label for="quantity">I would like to receive <input type="text" name="quantity" id="quantity"> copies of <cite>
+                The HTML5 Herald</cite>.</label>
+                    </li>
+                    <li>
+                        <label for="upsell">Also sign me up for <cite>The CSS3 Chronicle</cite></label>
+                        <input type="checkbox" id="upsell" name="upsell" value="CSS Chronicle">
+                    </li>
+                    <li>
+                        <input type="submit" id="register-submit" value="Send Post Haste">
+                    </li>
+                    </ul>
+                </form>
+
+                <article class="boxer">
+                    <h1>Put your <span>dukes</span> up sire</h1>
+                    <p>It’s time for a good old thrash­ing.<br>
+                      I will ro­tate your mous­tache OFF!</p>
+                  </article>
+            </div>
+            </main><!-- main -->
+    <script src="js/scripts.js"></script>
+
+
+    </body>
+</html>
