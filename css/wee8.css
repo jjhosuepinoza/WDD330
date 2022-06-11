@@ -1,7 +1,20 @@
-.boxer {
-    background-image: url("https://www.thehtml5herald.com/images/dukes.png");
+.ad-ad2 {
+    text-align: center;
+
+    background-image: url(https://www.thehtml5herald.com/images/dukes.png);
     background-position: bottom left;
     background-repeat: no-repeat;
     -webkit-transition: -webkit-transform  2s linear 250ms;
     transition: transform  2s linear 250ms;
     min-height: 140px; }
+    .ad-ad2 h1:hover span {
+        color: #484848;  
+        transform: translateX(40px);
+        
+        
+    }
+    .ad-ad2 h1 span {
+        font-size: 30px;
+        color: #999999;
+        display: inline-block;
+        }
