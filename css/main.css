@@ -1,0 +1,94 @@
+
+
+body {
+   margin: 0 100px 0 100px;
+    background-color: #227C9D;
+    color: rgb(10, 7, 7);
+  
+}
+
+.name {
+    padding-top: 50px;
+    align-items: center;
+    justify-content: center;
+    grid-area: name;
+}
+.assingment {
+    border-bottom: 1px solid rgb(68, 67, 67);
+    font-weight: bold;
+}
+
+header {
+    margin: 10px 100px 10px 100px;
+    display: grid;
+    grid-template-areas:
+     "me name"
+     "date date"
+     ;
+
+    background-color: #17C3B2;
+    border-radius: 10px;
+    padding: 1rem;
+    box-shadow: 3px 3px 5px #FEF9EF;
+}
+
+.content {
+    display: grid;
+    grid-template-columns: 1fr;
+  
+}
+main{
+    margin: 0 100px 0 100px;
+    text-align: center;
+}
+
+p {
+    border-top: 1px solid rgb(78, 76, 76);
+    font-style: italic;
+}
+
+.me {
+  
+    grid-area: me;
+    
+
+    
+}
+
+ul {
+    font-family: 'Montserrat', sans-serif;
+    display: inline-block; 
+	text-align: left; 
+}
+
+a:hover {
+    color: #FFCB77;
+}
+
+a {
+    color: #000408;
+  text-align: center;
+}
+
+li{
+    text-align: left;
+}
+footer {
+    margin: 10px 100px 10px 100px;
+    background-color: #17C3B2;
+    border-radius: 10px;
+    /* padding: 10px; */
+    font-family: sans-serif;
+    text-align: center;
+    font-weight: bold;
+    box-shadow: 3px 3px 5px #FEF9EF;
+}
+
+date {
+	margin: 0.5rem;
+	border: 1px solid #bbb;
+	padding: 0.75rem;
+	background-color: #eee;
+    text-align: center;
+    grid-area:date ;
+}
